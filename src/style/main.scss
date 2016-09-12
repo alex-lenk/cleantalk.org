@@ -1,0 +1,138 @@
+@import 'lib/breakpoint';
+@import 'lib/breakpoint-slicer';
+@import 'partials/mixins';
+@import "partials/common";
+
+header {
+  padding: 10px 0;
+  background-color: #3090c7;
+  color: #fff;
+
+  .logo {
+    &:hover {
+      opacity: .8;
+    }
+    &:before {
+      width: 30px;
+      height: 29px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/ico-logo.png") no-repeat center;
+      content: '';
+    }
+    &__text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  .nav {
+    display: inline-block;
+    margin-right: 30px;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    li {
+      display: inline-block;
+      margin-left: 15px;
+    }
+    a {
+      color: #fff;
+      border-bottom: 1px solid;
+      transition: all .3s ease;
+      &:hover {
+        text-decoration: none;
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .language {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      font-size: 15px;
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &:hover li:last-child {
+      display: block;
+      position: absolute;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        text-decoration: none;
+      }
+      &:before {
+        width: 16px;
+        height: 11px;
+        margin-right: 5px;
+        background: url(../img/__flag-s8d70d954cd.png) no-repeat;
+        display: inline-block;
+        content: '';
+      }
+      &.ru:before {
+        background-position: 0 -22px;
+      }
+      &.en:before {
+        background-position: 0 -11px;
+      }
+    }
+  }
+
+  .cloud {
+    width: 70%;
+    margin: 50px 0;
+    display: inline-block;
+    padding-left: 135px;
+    background: url(../img/cloud.png) center left no-repeat;
+    text-align: left;
+    &__title {
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1;
+      margin: 0 0 5px;
+    }
+    &__description {
+
+    }
+  }
+}
+
+.register {
+  color: #fff;
+  &__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  &__container {
+
+  }
+  &__group {
+
+  }
+  &__example {
+
+  }
+  &__hint {
+
+  }
+  &__text-field {
+
+  }
+}
+.button {
+
+}
+
+.--orange {
+
+}
