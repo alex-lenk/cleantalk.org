@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <title>CleanTalk</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/lib.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
 
@@ -22,50 +14,188 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-xs-12">
-                <a href="#" class="logo">
+            <div class="logo col-sm-4 col-xs-12">
+                <a href="#">
                     <span class="logo__text">CleanTalk</span>
                 </a>
             </div>
-            <div class="col-sm-6 col-xs-12">
-                <ul class="nav">
-                    <li><a href="#" rel="nofollow">Возможности</a></li>
+            <nav class="col-sm-8 col-xs-12">
+                <div class="menu-toggle">Site menu</div>
+                <ul class="menu">
+                    <li><a href="#">Features</a></li>
                     <li><a href="#">SpamFireWall</a></li>
-                    <li><a href="#" rel="nofollow">Стоимость</a></li>
-                    <li><a href="#" rel="nofollow">Авторизация</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Log in</a></li>
                 </ul>
                 <ul class="language">
                     <li><a href="#" class="en"><span>EN</span></a></li>
                     <li><a href="#" class="ru"><span>RU</span></a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="col-xs-12 text-center">
                 <div class="cloud">
-                    <h1 class="cloud__title">Облачный антиспам для форумов, блогов и сайтов</h1>
-                    <p class="cloud__description">Без капчи, вопросов, подсчета животных, пазлов и арифметических
-                        задач</p>
+                    <h1 class="cloud__title">Cloud spam protection for forums, boards, blogs and sites</h1>
+                    <p class="cloud__description">No Captcha, no questions, no counting animals, no puzzles, no math.
+                        Fight spam!</p>
                 </div>
-                <form class="register" action="#" method="post">
-                    <h3 class="register__title">Останови спам за 60 секунд</h3>
-                    <div class="register__container">
-                        <div class="register__group">
-                            <input type="email" class="register__text-field" placeholder="E-mail" required="" id="email">
-                            <label class="register__example">Будет логином.</label>
-                        </div>
-                        <div class="register__group">
-                            <input type="text" class="register__text-field" placeholder="Адрес веб-сайта" required="" id="site">
-                            <label class="register__example">Пример: cleantalk.ru</label>
-                        </div>
-                        <div class="register__group">
-                            <button type="button" class="button --orange">Создать аккаунт</button>
-                        </div>
-                    </div>
-                    <div class="register__hint">Пароль будет выслан на e-mail</div>
-                </form>
+                <!--<form class="register form-inline" action="#" method="post">-->
+                <!--<h3 class="register__title">Stop spam in 60 seconds</h3>-->
+
+                <!--<div class="form-group">-->
+                <!--<input type="email" class="form-control" id="email" placeholder="E-mail">-->
+                <!--<label for="email">This will be your login</label>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                <!--<input type="text" class="form-control" id="website" placeholder="Website address">-->
+                <!--<label for="website">Example: cleantalk.org</label>-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-primary">Create account</button>-->
+
+                <!--<div class="register__hint">A password will be emailed to you</div>-->
+                <!--</form>-->
             </div>
         </div>
     </div>
 </header>
+
+<div class="main-content container">
+    <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+            <div class="menu-toggle">Menu blog</div>
+            <ul class="menu-blog">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Activate</a></li>
+                <li><a href="#">Activity</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+
+            <div class="content">
+                //= template/posts/section-post-img.html
+                //= template/posts/section-post-img.html
+                //= template/posts/section-post.html
+                //= template/posts/section-post-img-long.html
+                //= template/posts/section-post-long.html
+                //= template/posts/section-post-img.html
+                //= template/posts/section-post-img.html
+            </div>
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <aside class="sidebar col-lg-3 col-md-4 col-sm-5 col-xs-12">
+
+            <form action="#" class="widget search-block">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search for blog">
+                    <button type="button" class="fa fa-search"></button>
+                </div>
+            </form>
+
+            <section class="widget widget_recent_entries">
+                <h3 class="widget-title">Recent Posts</h3>
+                <ul>
+                    <li>
+                        <a href="#">Visualization of attacks, anomalies and security breaches with OpenGraphiti</a>
+                    </li>
+                    <li>
+                        <a href="#">Phishing
+                            on a new level: Cloudflare + Protonmail + Unvalidated Redirects – set of young Fisher</a>
+                    </li>
+                    <li>
+                        <a href="#">Best practices to protect e-commerce sites</a>
+                    </li>
+                    <li>
+                        <a href="#">Protect SSH from brute-force on any port</a>
+                    </li>
+                    <li>
+                        <a href="#">How to strengthen the protection of passwords of “12345” from brute-force attack</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="widget widget_recent_comments">
+                <h3 class="widget-title">Recent Comments</h3>
+                <ul>
+                    <li class="recentcomments">
+                        <span class="comment-author-link"><a href="#" class="url">system</a></span>
+                        on <a href="#">Non-visual methods to protect the site from spam. Part 2. The true face of
+                        symbols</a>
+                    </li>
+                    <li class="recentcomments">
+                        <span class="comment-author-link">shagimuratov</span>
+                        on <a href="#">Anti-spam Control panel updated</a>
+                    </li>
+                    <li class="recentcomments">
+                        <span class="comment-author-link"><a href="#" class="url">Stephan Matthiesen</a></span>
+                        on <a href="#">Anti-spam Control panel updated</a>
+                    </li>
+                    <li class="recentcomments">
+                        <span class="comment-author-link">shagimuratov</span>
+                        on <a href="#">Anti-spam Control panel updated</a>
+                    </li>
+                    <li class="recentcomments">
+                        <span class="comment-author-link"><a href="#" class="url">Stephan Matthiesen</a></span>
+                        on <a href="#">Anti-spam Control panel updated</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="widget widget_meta">
+                <h3 class="widget-title">Meta</h3>
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Entries <abbr>RSS</abbr></a></li>
+                    <li><a href="#">Comments <abbr>RSS</abbr></a></li>
+                    <li><a href="#">WordPress.org</a></li>
+                </ul>
+            </section>
+
+        </aside>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="footer-menu">
+                    <li><a href="#">cleantalk.org</a></li>
+                    <li><a href="#">Панель управления</a></li>
+                    <li><a href="#">Черные списки</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Соглашение</a></li>
+                    <li><a href="#">Пресскит</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="js/jquery.js"></script>
 <script src="js/lib.js"></script>
